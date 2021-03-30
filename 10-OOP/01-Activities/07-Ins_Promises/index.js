@@ -4,6 +4,7 @@
 const choresDone = true;
 
 // Promise
+//provide promise
 const willGetSwitch = new Promise((resolve, reject) => {
   // Check for a desireable outcome, if so resolve the promise
   if (choresDone) {
@@ -26,6 +27,7 @@ const playGames = (reward) => {
   return Promise.resolve(message);
 };
 
+//consume promise
 willGetSwitch
   .then(playGames)
   .then((resolved) => console.log(resolved))
